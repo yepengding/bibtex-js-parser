@@ -11,7 +11,7 @@ Transforming a BibTeX file to an object in memory or a semi-structured file on d
 - [x] To a JSON object
 - [x] To a JSON string
 - [x] Browser support
-- [ ] NPM installation
+- [x] NPM installation
 
 ## Demo
 
@@ -76,6 +76,14 @@ Output:
 ]
 ```
 
+## Installation
+
+Install `bibtex-js-parser` with npm.
+
+```shell
+npm i bibtex-js-parser
+```
+
 ## Build
 
 Environment
@@ -124,12 +132,14 @@ Some examples are listed for reference.
 2. Include `bibtex-js-parser.js`.
 
 ```html
+
 <script src="./bibtex-js-parser.js"></script>
 ```
 
 3. Use exposed functions.
 
 ```html
+
 <script>
     const bibJSON = BibtexParser.parseToJSON(input);
     const bibJSONString = BibtexParser.parseToJSONString(input);
