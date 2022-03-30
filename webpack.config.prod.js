@@ -7,9 +7,9 @@ module.exports = {
     mode: 'production',
     entry: './src/index.js',
     output: {
-        filename: 'bibtex-js-bibtex_parser.js',
+        filename: 'bibtex-js-parser.js',
         library: {
-            name: 'Parser',
+            name: 'BibtexParser',
             // type: 'commonjs'
             type: 'umd'
         },

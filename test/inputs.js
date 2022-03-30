@@ -55,3 +55,62 @@ export const MyPublications = `
 \tyear = {2022},
 }
 `
+
+export const MyPublicationsBib = {
+    entries: [
+        {
+            type: 'inproceedings',
+            id: 'ding_dagbase_2020',
+            fields: [
+                {
+                    key: 'title',
+                    value: 'Dagbase: a decentralized database platform {Using} {DAG}-based consensus',
+                    type: 'String'
+                },
+                {key: 'copyright', value: 'All rights reserved', type: 'String'},
+                {key: 'isbn', value: '1-72817-303-5', type: 'String'},
+                {
+                    key: 'booktitle',
+                    value: '2020 {IEEE} 44th {Annual} {Computers}, {Software}, and {Applications} {Conference} ({COMPSAC})',
+                    type: 'String'
+                },
+                {key: 'publisher', value: 'IEEE', type: 'String'},
+                {
+                    key: 'author',
+                    value: 'Ding, Yepeng and Sato, Hiroyuki',
+                    type: 'String'
+                },
+                {key: 'year', value: '2020', type: 'String'},
+                {key: 'pages', value: '798--807', type: 'String'}
+            ]
+        },
+        {
+            type: 'article',
+            id: 'ding_formalism-driven_2022',
+            fields: [
+                {
+                    key: 'title',
+                    value: 'Formalism-{Driven} {Development}: {Concepts}, {Taxonomy}, and {Practice}',
+                    type: 'String'
+                },
+                {key: 'volume', value: '12', type: 'String'},
+                {key: 'copyright', value: 'All rights reserved', type: 'String'},
+                {key: 'issn', value: '2076-3417', type: 'String'},
+                {
+                    key: 'url',
+                    value: 'https://www.mdpi.com/2076-3417/12/7/3415',
+                    type: 'String'
+                },
+                {key: 'doi', value: '10.3390/app12073415', type: 'String'},
+                {key: 'number', value: '7', type: 'String'},
+                {key: 'journal', value: 'Applied Sciences', type: 'String'},
+                {
+                    key: 'author',
+                    value: 'Ding, Yepeng and Sato, Hiroyuki',
+                    type: 'String'
+                },
+                {key: 'year', value: '2022', type: 'String'}
+            ]
+        }
+    ]
+}

@@ -9,7 +9,7 @@ module.exports = {
     output: {
         filename: 'bibtex-js-parser-dev.js',
         library: {
-            name: 'Parser',
+            name: 'BibtexParser',
             type: 'commonjs'
         },
         path: path.resolve(__dirname, 'dist/dev'),

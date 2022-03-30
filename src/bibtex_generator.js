@@ -1,8 +1,37 @@
-import {parse} from "./bibtex_parser";
+import {ValueType} from "./core/type";
 
-// TODO
+/**
+ * Parse bib object to JSON object
+ *
+ * @param bib
+ * @returns {*}
+ */
 const parseBibToJSON = (bib) => {
-    return true
+    return bib.entries.map(entry => {
+        const entryJSON = {
+            id: entry.id,
+            type: entry.type
+        }
+        entry.fields.forEach(field => {
+            if (field.type === ValueType.STRING) {
+                entryJSON[field.key] = toPlainString(field.value);
+            } else if (field.type === ValueType.INTEGER) {
+                entryJSON[field.key] = parseInt(field.value);
+            }
+        })
+        return entryJSON
+    })
+
+}
+
+/**
+ * Convert BibTeX string to plain string
+ *
+ * @param str BibTeX string
+ * @returns {string} plain string
+ */
+const toPlainString = (str) => {
+    return str.replaceAll(/[{}]/g, "").replace("\"", "\\\"");
 }
 
 export {parseBibToJSON}
