@@ -7,11 +7,11 @@ Transforming a BibTeX file to an object in memory or a semi-structured file on d
 
 ## Features
 
-- [ ] Full entry types support
+- [x] Full entry types support
 - [x] To a JSON object
 - [x] To a JSON string
 - [x] Browser support
-- [ ] Public package
+- [ ] NPM installation
 
 ## Demo
 
@@ -136,7 +136,7 @@ Some examples are listed for reference.
 </script>
 ```
 
-## Related Project
+## Related Projects
 
 - [BibTeX Grammar](https://github.com/yepengding/BibTeX-Grammar)
 - [BibTex Java Parser](https://github.com/yepengding/BibTeX-Java-Parser)
