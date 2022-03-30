@@ -1,0 +1,3 @@
+[submodule "BibTeX-Grammar"]
+	path = BibTeX-Grammar
+	url = https://github.com/yepengding/BibTeX-Grammar.git
