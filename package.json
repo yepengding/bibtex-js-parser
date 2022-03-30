@@ -1,15 +1,26 @@
 {
   "name": "bibtex-js-parser",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://github.com/yepengding/bibtex-js-parser",
+  "description": "A BitTeX parser implemented in JavaScript (ES6). Transforming a BibTeX file to an object in memory or a semi-structured file on disk.",
   "scripts": {
     "dev": "webpack --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js",
     "test": "webpack --config webpack.config.dev.js && mocha --require source-map-support/register dist/dev/bibtex-js-parser-dev.js"
   },
-  "keywords": ["bibtex", "parser"],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "bibtex",
+    "parser"
+  ],
+  "author": "Yepeng Ding",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yepengding/bibtex-js-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/yepengding/bibtex-js-parser/issues"
+  },
   "dependencies": {
     "antlr4": "^4.9.3"
   },
