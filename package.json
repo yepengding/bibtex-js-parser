@@ -3,12 +3,14 @@
   "version": "1.0.1",
   "homepage": "https://github.com/yepengding/bibtex-js-parser",
   "description": "A BitTeX parser implemented in JavaScript (ES6). Transforming a BibTeX file to an object in memory or a semi-structured file on disk.",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "dev": "webpack --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
-    "test": "webpack --config webpack.config.dev.js && mocha --require source-map-support/register dist/dev/bibtex-js-parser-dev.js"
+    "build-commonjs": "LIB_TYPE=commonjs webpack --config webpack.config.prod.js",
+    "build-umd": "LIB_TYPE=umd webpack --config webpack.config.prod.js",
+    "build": "npm run build-commonjs && npm run build-umd",
+    "test": "npm run dev && mocha --require source-map-support/register dist/dev/bibtex-js-parser-dev.js"
   },
   "keywords": [
     "bibtex",

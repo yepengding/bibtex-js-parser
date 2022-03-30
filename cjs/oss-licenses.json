@@ -1,0 +1,10 @@
+[
+  {
+    "name": "antlr4",
+    "version": "4.9.3",
+    "repository": "antlr/antlr4.git",
+    "source": "https://registry.npmjs.org/antlr4/-/antlr4-4.9.3.tgz",
+    "license": "BSD-3-Clause",
+    "licenseText": null
+  }
+]

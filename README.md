@@ -11,7 +11,8 @@ Transforming a BibTeX file to an object in memory or a semi-structured file on d
 - [x] To a JSON object
 - [x] To a JSON string
 - [x] Browser support
-- [x] NPM installation
+- [x] NPM support
+- [x] Typing support for TypeScript projects
 
 ## Demo
 
@@ -76,12 +77,45 @@ Output:
 ]
 ```
 
-## Installation
+## Quickstart
 
-Install `bibtex-js-parser` with npm.
+### NPM
+
+1. Install `bibtex-js-parser` with npm.
 
 ```shell
 npm i bibtex-js-parser
+```
+
+2. Import `BibtexParser`.
+
+```javascript
+import {BibtexParser} from "bibtex-js-parser";
+```
+
+3. Parse a BibTeX string.
+
+```javascript
+const bibJSON = BibtexParser.parseToJSON(input);
+const bibJSONString = BibtexParser.parseToJSONString(input);
+```
+
+### In-Browser Use
+
+1. Build a UMD script `bibtex-js-parser.js`.
+2. Include `bibtex-js-parser.js`.
+
+```html
+<script src="umd/bibtex-js-parser.js"></script>
+```
+
+3. Use exposed functions.
+
+```html
+<script>
+    const bibJSON = BibtexParser.parseToJSON(input);
+    const bibJSONString = BibtexParser.parseToJSONString(input);
+</script>
 ```
 
 ## Build
@@ -110,7 +144,7 @@ npm run test
 
 ### For Production
 
-Build a UMD script to `dist/bibtex-js-parser.js`.
+Build a UMD script to `umd/bibtex-js-parser.js` and a CommonJS script to `cjs/bibtex-js-parser.js`.
 
 ```shell
 npm run build
@@ -122,29 +156,7 @@ Configuration is changeable in `.webpack.config.prod.js`.
 
 1. Build `bibtex-js-parser.js` for production.
 2. Import `bibtex-js-parser.js` in your project.
-3. Use exposed functions `parseToJSON` or `parseToJSONString`.
-
-Some examples are listed for reference.
-
-### In-Browser Use
-
-1. Build a UMD script `bibtex-js-parser.js`.
-2. Include `bibtex-js-parser.js`.
-
-```html
-
-<script src="./bibtex-js-parser.js"></script>
-```
-
-3. Use exposed functions.
-
-```html
-
-<script>
-    const bibJSON = BibtexParser.parseToJSON(input);
-    const bibJSONString = BibtexParser.parseToJSONString(input);
-</script>
-```
+3. Use exposed functions `parseToJSON` or `parseToJSONString` under namespace `BibtexParser`.
 
 ## Related Projects
 
