@@ -81,7 +81,7 @@ Output:
 
 ### NPM
 
-1. Install `bibtex-js-parser` with npm.
+1. Install `bibtex-js-parser` from [npm registry](https://www.npmjs.com/package/bibtex-js-parser).
 
 ```shell
 npm i bibtex-js-parser
@@ -102,14 +102,13 @@ const bibJSONString = BibtexParser.parseToJSONString(input);
 
 ### In-Browser Use
 
-1. Build a UMD script `bibtex-js-parser.js`.
-2. Include `bibtex-js-parser.js`.
+1. Include `bibtex-js-parser.js` from [CDN](https://unpkg.com/bibtex-js-parser/umd/bibtex-js-parser.js).
 
 ```html
-<script src="umd/bibtex-js-parser.js"></script>
+<script src="https://unpkg.com/bibtex-js-parser/umd/bibtex-js-parser.js"></script>
 ```
 
-3. Use exposed functions.
+2. Use exposed functions.
 
 ```html
 <script>
