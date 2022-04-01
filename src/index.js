@@ -16,9 +16,10 @@ export const parseToJSON = (input) => {
  * Parse BibTeX string to JSON string
  *
  * @param input BibTeX string
- * @returns {string} BibTeX JSON string
+ * @returns {string} BibTeX JSON string without raw texts
  */
 export const parseToJSONString = (input) => {
     const bib = parse(input);
+    bib.entries.forEach(entry => delete entry.raw);
     return JSON.stringify(parseBibToJSON(bib));
 }

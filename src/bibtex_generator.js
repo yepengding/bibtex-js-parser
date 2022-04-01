@@ -10,7 +10,8 @@ const parseBibToJSON = (bib) => {
     return bib.entries.map(entry => {
         const entryJSON = {
             id: entry.id,
-            type: entry.type
+            type: entry.type,
+            raw: entry.raw
         }
         entry.fields.forEach(field => {
             if (field.type === ValueType.STRING) {

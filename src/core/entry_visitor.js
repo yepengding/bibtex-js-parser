@@ -67,6 +67,7 @@ export default class EntryVisitor extends BibTeXVisitor {
         return {
             type: type,
             id: ctx.IDENTIFIER().getText(),
+            raw: ctx.start.getInputStream().getText(ctx.start.start, ctx.stop.stop),
             fields: ctx.field().map(field => field.accept(this.#fieldVisitor))
         }
     }

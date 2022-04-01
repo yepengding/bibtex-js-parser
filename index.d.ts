@@ -1,6 +1,7 @@
 export interface Entry {
     id: string,
     type: string,
+    raw: string,
     title: string,
     author?: string,
     booktitle?: string,
