@@ -1,4 +1,4 @@
-// Generated from /BibTeX-Grammar/BibTeX.g4 by ANTLR 4.9.2
+// Generated from /Users/michaeltei/Projects/PracticeProjects/BibTeXParser/bibtex-js-parser/BibTeX-Grammar/BibTeX.g4 by ANTLR 4.10.1
 // jshint ignore: start
 import antlr4 from 'antlr4';
 
